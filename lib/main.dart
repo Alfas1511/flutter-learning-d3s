@@ -10,8 +10,8 @@ import 'package:flutter_learning/widgets/container.dart';
 import 'package:flutter_learning/widgets/row_column_widget.dart';
 import 'package:flutter_learning/widgets/Navigation_learning_one/screen_one.dart';
 import 'package:flutter_learning/widgets/Navigation_learning_one/screen_two.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
+const SAVE_KEY_NAME = "UserLoggedIn";
 main() {
   runApp(MyApp());
 }
@@ -39,11 +39,8 @@ class MyApp extends StatelessWidget {
 
       // home: ChatScreenOne(),
 
-
       // home: SharedPreferenceScreenOne(),
-
       home: LoginPageSplashScreen(),
-
     );
   }
 }
